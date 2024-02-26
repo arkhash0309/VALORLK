@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Gallery | VALORLK</title>
+			<link rel="stylesheet" href="Galleries style.css">
+			<link rel="icon" href="images/logo2.jpg">
+		</head>
+		<body>
+			<script>
+				function showImage(imageNum) {
+					// Get the small image source and alt text
+					var small = document.getElementsByClassName("small-image")[imageNum - 1];
+					var smallImage = small.getElementsByTagName("img")[0];
+					var smallImageSrc = smallImage.src;
+					var smallImageAlt = smallImage.alt;
+
+					// Get the large image source, title, and description
+					var largeImage = document.getElementById("large-image");
+					var imageTitle = document.getElementById("image-title");
+					var imageDescription = document.getElementById("image-description");
+			
+					switch (imageNum) {
+						case 1:
+							largeImage.src = "images/smoothie.jpeg";
+							imageTitle.textContent = "Smoothie";
+							imageDescription.textContent = "A smoothie is a delicious and nutritious drink that can be an excellent addition to your fitness and gym routine. It typically consists of a blend of fruits, vegetables, and other healthy ingredients such as protein powder, Greek yogurt, or nut butter. Smoothies are a great way to refuel your body after a workout as they are high in nutrients and can help replenish your energy stores. They can also be an excellent pre-workout option as they provide a quick source of energy and can help you stay hydrated. To make a fitness-friendly smoothie, consider using ingredients that are high in protein and low in sugar. Some great options include spinach, kale, bananas, berries, Greek yogurt, chia seeds, and almond milk. Adding a scoop of protein powder to your smoothie can help promote muscle growth and recovery, especially if you are engaging in resistance training. Additionally, using frozen fruits or vegetables can help give your smoothie a thicker, creamier texture while also providing a refreshing post-workout treat. Overall, smoothies can be a convenient and healthy way to fuel your fitness and gym routine.";							
+							break;
+						case 2:
+							largeImage.src = "images/salmon.jpeg";
+							imageTitle.textContent = "Salmon";
+							imageDescription.textContent = "Salmon is a highly nutritious food that can be an excellent addition to your fitness and gym routine. It is a rich source of high-quality protein, omega-3 fatty acids, vitamins, and minerals that can help support muscle growth and recovery, as well as overall health. The protein found in salmon is easily digestible and contains all the essential amino acids that your body needs to build and repair muscle tissue. Additionally, the omega-3 fatty acids found in salmon can help reduce inflammation in the body, which is important for post-workout recovery. Salmon also contains a range of vitamins and minerals that are essential for overall health and wellbeing. For example, it is a rich source of vitamin D, which is important for bone health and immune function. It also contains minerals such as selenium, potassium, and magnesium, which are important for various bodily functions including muscle and nerve function. When it comes to preparing salmon for fitness and gym purposes, there are many options to consider. Grilling or baking salmon is a healthy way to cook it, as it retains most of its nutrients and is a low-fat option. Additionally, pairing salmon with a variety of vegetables and whole grains can provide a well-rounded meal that supports your fitness goals. Overall, salmon is a delicious and nutritious food that can help support your fitness and gym routine.";							
+							break;
+						case 3:
+							largeImage.src = "images/macaroni.jpeg";
+							imageTitle.textContent = "Chicken Macaroni";
+							imageDescription.textContent = 	"Chicken macaroni is a dish that can be enjoyed as part of a balanced diet for those who are into fitness and gym. It typically consists of cooked macaroni pasta and tender pieces of chicken, mixed with a creamy sauce and a variety of vegetables. Chicken is a great source of high-quality protein, which is important for muscle growth and repair. Protein is also essential for maintaining a healthy immune system, which is important for those who are physically active and engage in regular exercise. Macaroni pasta is a good source of carbohydrates, which provide energy for physical activity. However, it is important to keep portion sizes in mind, as too many carbohydrates can lead to excess calorie consumption. When it comes to the creamy sauce, it's important to choose a healthier option that is lower in saturated fat and calories. For example, using a sauce made from Greek yogurt or low-fat cream cheese can be a healthier alternative to traditional heavy cream. Adding vegetables to chicken macaroni can increase the fiber and nutrient content of the dish, while also providing a range of vitamins and minerals. Some good vegetable options include bell peppers, onions, zucchini, and spinach. Overall, chicken macaroni can be a delicious and nutritious dish to enjoy as part of a balanced diet for those who are into fitness and gym.";												
+							break;
+						case 4:
+							largeImage.src = "images/wrap.jpeg";
+							imageTitle.textContent = "Chicken Wrap";
+							imageDescription.textContent = 	"A chicken wrap can be a tasty and nutritious option for those who are into fitness and gym. It typically consists of a whole-grain wrap filled with cooked chicken, fresh vegetables, and a variety of healthy sauces or spreads. Chicken is an excellent source of protein, which is important for building and repairing muscle tissue after exercise. It also provides a range of essential nutrients, including iron, zinc, and vitamin B12, which are important for maintaining overall health and wellbeing. Choosing a whole-grain wrap can provide a source of complex carbohydrates, which can help provide sustained energy for physical activity. Whole-grain wraps also provide fiber, which is important for digestive health and can help you feel full and satisfied. Adding fresh vegetables to your chicken wrap can provide a range of vitamins and minerals, including vitamin C, vitamin A, and potassium. Some good vegetable options for a chicken wrap include lettuce, tomato, cucumber, and bell pepper. When it comes to sauces or spreads, it's important to choose healthier options that are lower in saturated fat and calories. Some good options include hummus, avocado, salsa, or a vinaigrette dressing. Overall, a chicken wrap can be a delicious and satisfying option for those who are into fitness and gym.";					
+							break;
+						case 5:
+							largeImage.src = "images/salad.jpeg";
+							imageTitle.textContent = "Salad";
+							imageDescription.textContent = "Salads are a fantastic food choice for those who are into fitness and gym, as they are packed with nutrients, low in calories, and easy to customize to meet individual dietary needs. A salad typically consists of a variety of fresh greens, vegetables, fruits, nuts, seeds, and a dressing. Leafy greens, such as spinach, kale, and lettuce, are low in calories and high in fiber, which can help keep you feeling full and satisfied. They are also rich in vitamins and minerals, including vitamins A, C, and K, iron, and calcium, which are important for maintaining overall health and supporting physical activity. Adding a variety of vegetables and fruits to your salad can increase the nutrient content and flavor. Some good options include tomatoes, cucumbers, bell peppers, carrots, berries, and citrus fruits. Incorporating protein into your salad, such as chicken, tofu, or beans, can help support muscle growth and repair. Additionally, healthy fats from nuts, seeds, and avocado can provide sustained energy for physical activity and help absorb important fat-soluble vitamins. When it comes to dressings, it's important to choose healthier options that are lower in saturated fat and added sugars. Some good options include vinaigrettes made with olive oil and vinegar or a simple squeeze of lemon or lime juice. Overall, salads are a fantastic option for those who are into fitness and gym."; 						
+							break;
+					}
+					// Display the large image, title, and description
+					var largeImageContainer = document.getElementById("large-image-container");
+					largeImageContainer.style.display = "block";
+				}
+			</script>
+			<nav>
+				<h2 class="logo"></h2>
+				<ul>
+					<a href="../../Home Page/Main page.html"><li>Home</li></a>
+					<a href="../Gallery Page/Gallery Page.html"><li>Gallery</li></a>
+					<a href="../Quiz final/Quiz try home.html"><li>Quiz</li></a>
+					<a href="../Leaderboard Page & Personalised Newsletter/LeaderBoardSummary.html"><li>Leaderboard</li></a>
+					<a href="../Feedback form/Feedback form.html"><li>Let Us Know</li></a>
+					<a href="../Shop ValorLK/shop.html"><li>Shop</li></a>
+					<a href="../Sign In/Sign In.html"><li>Sign In</li></a>
+				</ul>
+			</nav>
+			<br/>
+			<br/>
+			<br/>
+			<h1>Gallery</h1>
+			<div class="container">
+				<div class="small-image" onclick="showImage(1)">
+					<img src="images/smoothie.jpeg" alt="smoothie">
+				</div>
+				<div class="small-image" onclick="showImage(2)">
+					<img src="images/salmon.jpeg" alt="salmon">
+				</div>
+				<div class="small-image" onclick="showImage(3)">
+					<img src="images/macaroni.jpeg" alt="macaroni">
+				</div>
+				<div class="small-image" onclick="showImage(4)">
+					<img src="images/wrap.jpeg" alt="wrap">
+				</div>
+				<div class="small-image" onclick="showImage(5)">
+					<img src="images/salad.jpeg" alt="salad" >
+				</div>
+			</div>
+			<div class="image-container" id="large-image-container">
+				<img id="large-image" src="images/smoothie.jpeg" alt="large">
+				<div id="image-info">
+					<h2 id="image-title">Smoothie</h2>
+					<p id="image-description">A smoothie is a delicious and nutritious drink that can be an excellent addition to your fitness and gym routine. It typically consists of a blend of fruits, vegetables, and other healthy ingredients such as protein powder, Greek yogurt, or nut butter. Smoothies are a great way to refuel your body after a workout as they are high in nutrients and can help replenish your energy stores. They can also be an excellent pre-workout option as they provide a quick source of energy and can help you stay hydrated. To make a fitness-friendly smoothie, consider using ingredients that are high in protein and low in sugar. Some great options include spinach, kale, bananas, berries, Greek yogurt, chia seeds, and almond milk. Adding a scoop of protein powder to your smoothie can help promote muscle growth and recovery, especially if you are engaging in resistance training. Additionally, using frozen fruits or vegetables can help give your smoothie a thicker, creamier texture while also providing a refreshing post-workout treat. Overall, smoothies can be a convenient and healthy way to fuel your fitness and gym routine.</p>
+				</div>
+			</div>
+			\<br/>
+			<div id="dropdown">
+				<label for="background-color">Background Color : &nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<select id="background-color"><option value="pleaseSelect" disabled selected hidden>Select Color</option>
+					<option value="#04fce79d">Cyan</option>
+					<option value="#fd83d9">Pink</option>
+					<option value="#ffc14e">Yellow</option>
+				</select>
+				<label for="text-color">Text Color : &nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<select id="text-color"><option value="pleaseSelect" disabled selected hidden>Select Font Color</option>
+					<option value="#22ff00">Green</option>
+					<option value="#0000ff">Dark Blue</option>
+					<option value="#a74f19">Brown</option>
+				</select>
+				<button id="reset-button">Reset</button>
+			</div>
+			<br>
+			<footer>
+				<div class="footer-navigation" role="footer" aria-label="Main">
+					<h2> Extra | Navigation</h2>
+					<!-- footer navigation -->
+					<ul class="no-bullet">
+						<li><a href="../Main page.html">Home</a></li>
+						<li><a href="../Gallery Page/Gallery Page.html">Gallery</a></li>
+						<li><a href="../Gallery Page/Gallery Page.html">Quiz</a></li>
+						<li><a href="../Shop ValorLK/AboutUs/About US.html">About Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<!-- footer contact info -->
+					<h2><strong>Contact Info</strong></h2>
+					<p>
+					+94 786405254 <br/>
+					ValorLK<br />
+					No 57, <br />
+					Ramakrishna Road,<br />
+					Wellawatte.
+					</p>
+				</div>
+			</footer>
+			<hr class="footer-hr">
+			<!--editor page -->
+			<p class="page-credits"><a href="../Editors Page/Editors page.html" >Learn More about the Editor</a></p>  
+			<script>
+				const backgroundColorSelector = document.getElementById('background-color');
+				const textColorSelector = document.getElementById("text-color");
+				const resetButton = document.getElementById('reset-button');
+
+				// Set the initial background and text colors
+				document.body.style.backgroundColor = backgroundColorSelector.value;
+				document.body.style.color = textColorSelector.value;
+
+				// Listen for changes to the background color selector
+				backgroundColorSelector.addEventListener('change', (event) => {
+					document.body.style.backgroundColor = event.target.value;
+				});
+
+				// Listen for changes to the text color selector
+				textColorSelector.addEventListener('change', (event) => {
+					document.body.style.color = event.target.value;
+				});
+
+				// Listen for clicks on the reset button
+				resetButton.addEventListener('click', () => {
+					backgroundColorSelector.value = 'gray';
+					textColorSelector.value = 'black';
+					document.body.style.backgroundColor = 'gray';
+					document.body.style.color = 'black';
+				});
+			</script>
+		</body>
+	</html>

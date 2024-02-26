@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>QUIZ-GAME - -VALORLK</title>
+        <link rel="stylesheet" href="quiz try.css">
+        <link rel="icon" href="logo2.jpg">
+    </head>
+
+    <body>
+
+        <!--Materialize CSS for Home Page Design-->
+        <nav class="nav-wrapper black">
+            <div class="container">
+                <a class="brand-logo">QUIZ</a>
+            </div>
+        </nav>
+        
+        <section class="container section">
+            <div class="row">
+                <div class="enroll">
+                    <form class="myform" name="id" onsubmit="submitted(event)">
+                    <h4>CONTESTENT NAME</h4>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="fname" id="fname" size="50" maxlength="50" placeholder="Name" required>
+                    <p class="submit-btn"><button type="submit" class="submit-button" 
+                        onclick="this.style.display='none'">Submit Name</button></p>
+                </div>
+
+                <div class="rules">
+                    <h4>RULES AND REGULATIONS</h4>
+                    <p class="rules-list">1. YOU CANNOT SKIP ANY QUESTIONS.</p>
+                    <p class="rules-list">2. YOU CANNOT GO TO PREVIOUS QUESTION.</p>
+                    <p class="rules-list">3. TRY ATTEMPTING ALL WITHOUT CHEATING.</p>
+                </div>
+
+                <p class="center"><a href="quiz.html" class="btn-blue">Let's Start</a></p>
+                <br><br>
+            </form>    
+            </div>
+        </div>
+        </section>
+
+        <footer>
+            <div class="footer-navigation" role="footer" aria-label="Main">
+                <h2> Extra | Navigation</h2>
+                <!-- footer navigation -->
+                <ul class="no-bullet">
+                    <li><a href="../Main page.html">Home</a></li>
+                    <li><a href="../Gallery Page/Gallery Page.html">Gallery</a></li>
+                    <li><a href="../Quiz final/Quiz try home.html">Quiz</a></li>
+                    <li><a href="../Shop ValorLK/AboutUs/About US.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <!-- footer contact info -->
+                <h2><strong>Contact Info</strong></h2>
+                <p>
+                +94 786405254 <br />
+                ValorLK<br />
+                No 57, <br />
+                Ramakrishna Road,<br />
+                Wellawatte.
+                </p>
+            </div>
+        </footer>
+        <hr class="footer-hr">
+        <!--editor page -->
+        <p class="page-credits"><a href="../Editors page Arkhash/PageEditor.html" >Learn More about the Editor</a></p>
+        <script>
+            function submitted(e){
+                e.preventDefault();
+                
+                
+                sessionStorage.setItem("name", document.getElementById("fname").value);
+            }
+        </script>
+    </body>
+</html>

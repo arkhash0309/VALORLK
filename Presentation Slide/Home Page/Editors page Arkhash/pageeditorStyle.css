@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@1,100;1,300&display=swap');
+
+:root{
+	--primary-color: #eb2f06;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, #020202, #333633, #757675);
+}
+
+nav {
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary colour);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+}
+
+.logo::before {
+	content: "VALOR";
+	color: white;
+}
+.logo::after {
+	content: "LK";
+	color: black;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+} 
+
+ul li {
+	list-style: none;
+}
+
+ul a:hover {
+	color: var(--primary-color);
+}
+.intro{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+}
+
+.intro h2{
+	display:flex;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+
+.main_head{
+	color: red;
+    font-family: 'Dancing Script','cursive;';
+	margin: auto;
+	width: 100%;
+	text-align: center;
+    text-shadow: 2px 2px #060606;
+    margin-top:100px;
+    font-size: 50px;
+}
+.line_row{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.student_details {
+    height: 540px;
+	width: 400px;
+	margin-top: 100px;
+	background: #f8faff;
+	padding: 30px;
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.35);
+	border-radius: 15px;
+	margin-left: 50px;
+	float: left;
+	transition: 0.5s;
+	transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.student_details:hover {
+	background: linear-gradient(to bottom,#eb2f06, #f17474, #e9baba);
+    color: white;
+    transform:scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1); 
+}
+            
+.image{
+	margin-left: 30px;
+	margin-top: 100px;
+    float: right;
+}
+
+img{
+	height: 440px;
+    width: 330px;
+    border-radius: 20%;
+    transition: transform 0.5s;
+}
+h3{
+	font-size: 28px;
+    font-weight: 900;
+}
+
+h4{
+	font-size: 20px;
+    font-weight: 600;
+}
+
+.tasks{
+	font-weight: 600;
+}
+
+p{
+    margin: 0;
+	font-weight: 300;
+}
+.student_details .button{
+    text-decoration: none;
+    background-color:#ff1100;
+    color:white;
+    border-radius:40px;
+    padding:10px 10px;
+    font-size:1.2em;
+    font-weight:bold;
+    float: right;
+}

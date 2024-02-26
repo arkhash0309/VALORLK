@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Student4.css"?>
+<leaderboard>
+	<player>
+		<fullname>Sherlock Holmes</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>70</score>
+	</player>
+	<player>
+		<fullname>Anderson</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>55</score>
+	</player>
+	<player>
+		<fullname>Steve Harvey</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>50</score>
+	</player>
+	<player>
+		<fullname>Yoriichi</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>60</score>
+	</player>
+    <player>
+		<fullname>Inoske</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>50</score>
+	</player>
+    <player>
+		<fullname>Zeintsu</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>90</score>
+	</player>
+    <player>
+		<fullname>Nezuko Chan</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>60</score>
+	</player>
+	<player>
+		<fullname>Kamado Tanjiro</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>80</score>
+	</player>
+    <player>
+		<fullname>SinCosTan</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>60</score>
+	</player>
+    <player>
+		<fullname>Arthur</fullname>
+		<age></age>
+		<gender></gender>
+		<occupation></occupation>
+		<email></email>
+		<score>40</score>
+	</player>
+</leaderboard>
+<!--validated in W3 School-->

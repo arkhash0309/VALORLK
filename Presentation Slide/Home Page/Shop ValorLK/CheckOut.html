@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title style="font-family:Courier New">Checkout | VALORLK</title>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<link rel="stylesheet" type="text/css" href="../ExternalCSS.css"/>
+    <link rel="stylesheet" type="text/css" href="CheckOut.css"/>
+	<link rel="icon" href="logo2.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo"></h2>
+            <ul id="nav-bar">
+                <a href="../Main page.html"><li>Home</li></a>
+                <a href="../Gallery Page/Gallery Page.html"><li>Gallery</li></a>
+                <a href="../Quiz final/Quiz try home.html"><li>Quiz</li></a>
+                <a href="../Leaderboard Page & Personalised Newsletter/LeaderBoardSummary.html"><li>Leaderboard</li></a>
+				<a href="../Feedback form/Feedback form.html"><li>Let Us Know</li></a>
+                <a href="../Shop ValorLK/shop.html"><li>Shop</li></a>
+				<a href="../Sign In/Sign In.html"><li>Sign In</li></a>
+            </ul>
+        </nav>
+	</header>
+    <br><br><br><br>
+	<h2 class="H2">Checkout</h2>
+		<div class="column1">
+			<h2>Billing details</h2>
+			<form action="../Shop ValorLK/shop.html" method="post" name="checkout" onsubmit="return validateForm();">
+				<label for="Email address">Email address</label><br>				
+				<input type="text" id="Email address" name="Email address" placeholder="" style="width: 100%;height: 35px;"><br>
+				<label for="First name">First name</label><br>				
+				<input type="text" id="First name" name="first name" placeholder="" style="width:50%;height:35px"><br>
+				<label for="Last name">Last name</label><br>				
+				<input type="text" id="Last name" name="last name" placeholder="" style="width:50%;height:35px"><br>
+				<label for="Country">Country/Region</label><br>				
+				<input type="text" id="Country" name="country" placeholder="" style="width:50%;height:35px"><br>
+				<label for="Street address">Street address</label><br>				
+				<input type="text" id="Street address" name="street address" placeholder="House number and street name" style="width:100%;height:35px"><br>				
+				<input type="text" id="Street address" name="street address" placeholder="Apartment,suite.unit,etc.(optional)" style="width:100%;height:35px"><br>				
+				<label for="Town">Town/City</label><br>				
+				<input type="text" id="Town" name="town" placeholder="" style="width:50%;height:35px"><br>				
+				<label for="Postcode">Postcode/ZIP</label><br>				
+				<input type="text" id="Postcode" name="postcode" placeholder="" style="width:50%;height:35px"><br>
+				<label for="Phone">Phone</label><br>				
+				<input type="text" id="Phone" name="phone" placeholder="" style="width:100%;height:35px"><br>
+				<label for="Notes">Order notes(optional)</label><br>				
+				<input type="text" id="Notes" name="notes" placeholder="Notes about your order,e.g. special notes for delivery." style="width:100%;height:100px"><br>			
+				<input type="submit" value="Place Order">
+			</form>
+		</div>
+		<script>
+			function validateForm() {
+  let email = document.getElementById("Email address").value.trim();
+  let firstName = document.getElementById("First name").value.trim();
+  let lastName = document.getElementById("Last name").value.trim();
+  let country = document.getElementById("Country").value.trim();
+  let streetAddress = document.getElementById("Street address").value.trim();
+  let town = document.getElementById("Town").value.trim();
+  let postcode = document.getElementById("Postcode").value.trim();
+  let phone = document.getElementById("Phone").value.trim();
+
+  // Check if email is valid
+  let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  // Check if first name is not empty
+  if (firstName === "") {
+    alert("Please enter your first name.");
+    return false;
+  }
+
+  // Check if last name is not empty
+  if (lastName === "") {
+    alert("Please enter your last name.");
+    return false;
+  }
+
+  // Check if country is not empty
+  if (country === "") {
+    alert("Please enter your country.");
+    return false;
+  }
+
+  // Check if street address is not empty
+  if (streetAddress === "") {
+    alert("Please enter your street address.");
+    return false;
+  }
+
+  // Check if town is not empty
+  if (town === "") {
+    alert("Please enter your town/city.");
+    return false;
+  }
+
+  // Check if postcode is not empty
+  if (postcode === "") {
+    alert("Please enter your postcode/ZIP.");
+    return false;
+  }
+
+  // Check if phone number is not empty
+  if (phone === "") {
+    alert("Please enter your phone number.");
+    return false;
+  }
+
+  // Check if phone number is valid
+  let phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(phone)) {
+    alert("Please enter a valid phone number.");
+    return false;
+  }
+  
+  // if all validations passed, submit the form and show a thank you message
+  alert("Dear " +  firstName + " "+ lastName+ ", Thank you for using VALORLK.");
+  return true;
+}
+		</script>
+		<hr style="margin:50px">
+        <br><br><br>
+    <footer>
+        <div class="footer-navigation" role="footer" aria-label="Main">
+            <h2> Extra | Navigation</h2>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+                <li><a href="../Main page.html">Home</a></li>
+                <li><a href="../Gallery Page/Gallery Page.html">Gallery</a></li>
+                <li><a href="../Quiz final/Quiz try home.html">Quiz</a></li>
+				<li><a href="../Shop ValorLK/AboutUs/About US.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+            +94 786405254 <br />
+            ValorLK<br />
+            No 57, <br />
+            Ramakrishna Road,<br />
+            Wellawatte.
+            </p>
+        </div>
+    </footer>
+    <hr class="footer-hr">
+    <!--editor page -->
+    <p class="page-credits"><a href="Page Editor/PageEditor.html" >Learn More about the Editor</a></p>
+</body>
+</html>

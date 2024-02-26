@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Sign In | VALORLK</title>
+			<link rel="stylesheet" href="CSS.css">
+			<link rel="icon" href="images/logo2.jpg">
+		</head>		
+		<body>
+			<script>
+				function validateExtraSignIn() {
+					var exerciseTimes = document.getElementById("exercise").value;
+					var sleepingTimes = document.getElementById("sleeping").value;
+					var calorieIntake = document.getElementById("calorie").value;
+					if ((exerciseTimes == "") || (sleepingTimes == "") || (calorieIntake == "")) {
+						alert("All the fields must be filled.");
+						return false;
+					}
+					else{
+						alert("Thank you for signing to VALORLK.");
+						return true;
+					}
+			    }
+			</script>
+			<nav>
+				<h2 class="logo"></h2>
+				<ul>
+					<a href="../../Home Page/Main page.html"><li>Home</li></a>
+					<a href="../Gallery Page/Gallery Page.html"><li>Gallery</li></a>
+					<a href="../Quiz final/Quiz try home.html"><li>Quiz</li></a>
+					<a href="../Leaderboard Page & Personalised Newsletter/LeaderBoardSummary.html\"><li>Leaderboard</li></a>
+					<a href="../Feedback form/Feedback form.html"><li>Let Us Know</li></a>
+					<a href="../Shop ValorLK/shop.html"><li>Shop</li></a>
+					<a href="../Sign In/Sign In.html"><li>Sign In</li></a>
+				</ul>
+			</nav>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<form action="../../Home Page/Main page.html" method="post" name="extrasignin" onsubmit="return validateExtraSignIn();">
+				<h1>Sign In</h1>
+				<label for="exercise">How often do you exercise?</label>
+				<select id="exercise" name="exercise">
+					<option value="">-- Exercise Times --</option>
+					<option value="daily">Daily</option>
+					<option value="thrice">Thrice a week</option>
+					<option value="once">Once a week</option>
+					<option value="rarely">Once in a fortnight</option>
+				</select>
+				<br>
+				<br>
+				<label for="sleeping">Sleep time</label>
+				<select id="sleeping" name="sleeping">
+					<option value="">-- Sleep Times --</option>
+					<option value="ten">Ten hours</option>
+					<option value="eight">Eight hours</option>
+					<option value="six">Six hours</option>
+					<option value="low">Less tahn six hours</option>
+				</select>
+				<br>
+				<br>
+				<label for="calorie">Calorie intake</label>
+				<select id="calorie" name="calorie">
+					<option value="">-- Calories intake level--</option>
+					<option value="low">Less than 1500</option>
+					<option value="moderate">1500-2500</option>
+					<option value="high">2500-3000</option>
+					<option value="veryhigh">More than 3000</option>
+				</select>
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</form>
+			<br/>
+			<footer>
+				<div class="footer-navigation" role="footer" aria-label="Main">
+					<h2> Extra | Navigation</h2>
+					<!-- footer navigation -->
+					<ul class="no-bullet">
+						<li><a href="../Main page.html"><li>Home</li></a>
+						<li><a href="../Gallery Page/Gallery Page.html"><li>Gallery</li></a>
+						<li><a href="../Quiz final/Quiz try home.html"><li>Quiz</li></a>
+						<li><a href="../Shop ValorLK/AboutUs/About US.html"><li>About Us</li></a>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<!-- footer contact info -->
+					<h2><strong>Contact Info</strong></h2>
+					<p>
+					+94 786405254 <br /><br />
+					ValorLK<br />
+					No 57, <br />
+					Ramakrishna Road,<br />
+					Wellawatte.
+					</p>
+				</div>
+			</footer>
+			<hr class="footer-hr">
+			<br/>
+			<!--editor page -->
+			<p class="page-credits"><a href="../Editors Page/Editors page.html">Learn More about the Editor</a></p>   
+	
+		</body>
+	</html>

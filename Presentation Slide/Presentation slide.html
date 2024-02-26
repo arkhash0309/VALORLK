@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentation Slide | VALORLK</title>
+    <link rel="stylesheet" href="Presentation.css">
+    <link rel="icon" href="images/logo2.jpg">
+</head>
+<body>
+    <video id="bgvideo" autoplay muted loop>
+        <source src="PresentationPage.mp4" type="video/mp4">
+    </video>
+    <img src="images/logo.jpg" width="250" height="200" alt="Logo">
+    <h2>CM1605 COURSEWORK GROUP 2</h2>
+    <h2>Fitness assistant application</h2>
+    <h2 id="displaySeconds"></h2>
+    <div>
+        <div class="photo">
+            <img src="images/Haleef.jpg" width="175" height="225" alt="Haleef">
+            <div class="photo-info">
+                <p>Name: Haleef</p>
+                <p>IIT ID: 20221381</p>
+                <p>RGU ID: 2237035</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="images/Aarkhash.jpg" width="175" height="225" alt="Arkhash">
+            <div class="photo-info">
+                <p>Name: Arkhash</p>
+                <p>IIT ID: 20221213</p>
+                <p>RGU ID: 2237045</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="images/Uzama.jpg" width="175" height="225" alt="Uzama">
+            <div class="photo-info">
+                <p>Name: Uzama</p>
+                <p>IIT ID: 20221552</p>
+                <p>RGU ID: 2237029</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="images/Muhammadh.jpg" width="175" height="225" alt="Muhammadh">
+            <div class="photo-info">
+                <p>Name: Muhammadh</p>
+                <p>IIT ID: 20221510</p>
+                <p>RGU ID: 2236756</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var seconds=5
+            function displaySeconds(){
+                seconds -=1
+                document.getElementById("displaySeconds").innerText="This page will redirect in "+seconds+" Seconds"
+            }
+            setInterval(displaySeconds,1000);
+
+        function hidePage() {
+            document.location.href = "Home Page/Main page.html";
+        }
+        setTimeout(hidePage, 5000);
+        
+    </script>
+</body>
+</html>

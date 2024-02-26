@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="30"/>    <!--refresh doc every 30s-->
+    <meta charset="UTF-8"/>
+    <meta name="author" content="MuhammedHaleef"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="ValorLK Leaderboard Summary"/>
+	<title>ValorLK | Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="Leaderboard.css"/>
+    <link rel="stylesheet" type="text/css" href="../ExternalCSS.css"/> 
+    <link rel="icon" href="logo2.jpg">
+    <header>
+        <nav>
+            <h2 class="logo"></h2>
+            <ul id="nav-bar">
+                <a href="../Main page.html">Home</a></li>
+                <a href="../Gallery Page/Gallery Page.html">Gallery</a></li>
+                <a href="../Quiz final/Quiz try home.html">Quiz</a></li>
+                <a href="../Leaderboard Page & Personalised Newsletter/LeaderBoardSummary.html">Leaderboard</li></a></li>
+                <a href="../Feedback form/Feedback form.html">Let Us Know</a></li>
+                <a href="../Shop ValorLK/shop.html">Shop</a></li>
+                <a href="../Sign In/Sign In.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <video id="bgvideo" autoplay muted loop>
+        <source src="leaderboardPg.mp4" type="video/mp4">
+    </video>
+    <br><br><br>
+    <div>
+        <table id="leaderboard">
+            <caption><h2>LEADERBOARD</h2></caption>
+            <thead>
+                <tr id>
+                    <th id="badges">Badge</th>
+                    <th id="rank">Rank</th>
+                    <th id="name"> Full Name</th>
+                    <th id="score">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Creating the table data rows dynamically by calling the XML file data using JavaScirpt  -->
+                <!--<tr>
+                    <td>Badge</td>
+                    <td>PlayerRank</td>
+                    <td>PlayerFullName</td>
+                    <td>PlayerPoints</td>
+                </tr>-->
+                <script type="text/javascript" src="leaderboard.js"></script>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="footer-navigation" role="footer" aria-label="Main">
+            <h2> Extra | Navigation</h2>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+                <li><a href="../Main page.html">Home</a></li>
+                <li><a href="../Gallery Page/Gallery Page.html">Gallery</a></li>
+                <li><a href="../Quiz final/Quiz try home.html">Quiz</a></li>
+                <li><a href="../Shop ValorLK/AboutUs/About US.html">About Us</a></li>
+                <li><a href="#"><button id="newsletter-popup-btn">Get Personalised Newsletters</button></a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+            +94 786405254 <br />
+            ValorLK<br />
+            No 57, <br />
+            Ramakrishna Road,<br />
+            Wellawatte.
+            </p>
+        </div>
+    </footer>
+    <hr class="footer-hr">
+    <!--editor page link-->
+    <p class="page-credits"><a href="Page Editor/PageEditor.html" >Learn More about the Editor</a></p>
+    <!--Personalized newsletter subscription form-->
+    <!--Newsletter subscription form-->
+        <div id="newsletter-popup-content" class="newsletter-popup-content">
+            <form name="subscribe" onsubmit="return validateSignIn();">
+                <span class="close">&times;</span>
+                <h1>Subscribe for Personalized Newsletter</h1>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Full Name">
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter an Email Address">
+                <br>
+                <br>
+                <input type="submit" value="Next">
+                <input type="reset" value="Clear">
+            </form> 
+        </div>
+        <script>
+        // Get the popup(Newsletter Subscription Form) and button elements
+            var popup = document.getElementById("newsletter-popup-content");
+            var btn = document.getElementById("newsletter-popup-btn");
+            
+            // Get the close button element
+            var close = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, Subscription form popups
+            btn.onclick = function() {
+            popup.style.display = "block";
+            }
+            
+            // When the user clicks on the close button, close the popup form
+            close.onclick = function() {
+            popup.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the popup form, close it
+            window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+            }
+            //validate user inputs in subscribing to newsletter form
+            function validateSignIn() {
+                var fullName = document.forms["subscribe"]["name"].value;
+                var email = document.forms["subscribe"]["email"].value;
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if ((fullName == "") || (email == "") || (!emailRegex.test(email))) {
+                    alert("All the fields must be filled.");
+                    return false;
+                }
+                else{
+                    alert("Dear " + fullName + " , you have successfully subscribed for a personalized newsletter”");
+                    //provides an alert saying succesfully subscribed
+                    return true;
+                }
+            }
+        </script>   
+    </body>
+</html>
